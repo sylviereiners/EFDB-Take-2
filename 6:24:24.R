@@ -203,3 +203,5 @@ sample_bound <- bind_rows(tropical_desert, tropical_dryforest, tropical_moistfor
 unique(sample_bound)
 
     # Next steps: figure out what happened to the overlapping rows, ask Dave what to do with overlapping rows. #
+unique_sources <- unique(sample_bound$Source.of.data)
+source_matrix <- matrix(unique_sources)
